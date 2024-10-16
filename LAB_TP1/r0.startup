@@ -1,7 +1,6 @@
-echo 1 > /proc/sys/net/ipv4/ip_forward
-ip address add 192.168.1.254/24 dev eth0
+ip addr add 192.168.1.254/24 dev eth0
 ip link set eth0 up
-ip address add 172.16.5.253/24 dev eth1
+ip addr add 172.16.5.253/24 dev eth1
 ip link set eth1 up
-ip route add default via 172.16.5.254
-iptables -t nat -A POSTROUTING -o eth1 -j MASQUERADE
+ip route add default via 172.16.5.254 dev eth1
+ip route add 172.16.7.0/24 via 172.16.5.253
