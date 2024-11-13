@@ -5,3 +5,9 @@ ip link set eth0 up
 ip address add 172.16.5.253/24 dev eth1
 ip link set eth1 up
 ip route add default via 172.16.5.254
+<<<<<<< HEAD
+=======
+apt update
+apt search isc-dhcp-server
+apt install isc-dhcp-server -y
+>>>>>>> 18bd471 (Mise à jour)
