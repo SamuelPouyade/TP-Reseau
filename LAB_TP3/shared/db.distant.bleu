@@ -1,0 +1,17 @@
+$TTL 86400
+
+@ IN SOA dns2.distant.bleu.org. root.dns2.distant.bleu.org. (
+	2019060201
+	10800
+	3600
+	604800
+	86400
+)
+
+@ IN NS dns2.distant.bleu.org.
+
+dns2.distant.bleu.org. IN A 172.16.1.11
+r0.distant.bleu.org. IN A 172.16.1.254
+http2.distant.bleu.org. IN A 172.16.1.101
+distant IN NS dns.distant.bleu.org.
+dns2.distant.bleu.org. IN A 172.16.1.11
